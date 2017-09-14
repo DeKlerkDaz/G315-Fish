@@ -279,11 +279,11 @@ GameObject:
   m_Component:
   - component: {fileID: 599503287}
   - component: {fileID: 599503290}
-  - component: {fileID: 599503289}
   - component: {fileID: 599503288}
+  - component: {fileID: 599503289}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,18 +333,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &599503289
-BoxCollider:
+--- !u!61 &599503289
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 599503286}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &599503290
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -397,7 +410,7 @@ GameObject:
   - component: {fileID: 1411144766}
   m_Layer: 0
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2802b8b0eb86ba46b4f541197b7467c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FlightForce: 20
+  FlightForce: 35
   rb: {fileID: 1411144768}
 --- !u!50 &1411144768
 Rigidbody2D:
@@ -447,7 +460,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!4 &1411144769
 Transform:
   m_ObjectHideFlags: 0

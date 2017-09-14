@@ -25,7 +25,7 @@ public class Obstacles : MonoBehaviour
     {
         if (aCol.collider.tag == "Player")
         {
-            Destroy(gameObject);
+            Destroy(aCol.gameObject);
         }
     }
 }
