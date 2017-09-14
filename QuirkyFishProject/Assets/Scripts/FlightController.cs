@@ -14,10 +14,11 @@ public class FlightController : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        bool flightActive = Input.GetKey(KeyCode.W);
+         
 
-        if (flightActive)
+        if (Input.GetButtonDown("Jump"))
         {
+            
             rb.AddForce(new Vector2(0, FlightForce));
         }
 		
