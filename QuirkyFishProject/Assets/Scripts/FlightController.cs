@@ -21,6 +21,15 @@ public class FlightController : MonoBehaviour {
             
             rb.AddForce(new Vector2(0, FlightForce));
         }
+
+        if(Input.GetButtonDown("Jump"))
+        {
+            flightActive = true;
+        }
+        else if(Input.GetButtonUp("Jump"))
+        {
+            flightActive = false;
+        }
 		
 	}
 }
