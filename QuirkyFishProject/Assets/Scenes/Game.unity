@@ -439,7 +439,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2802b8b0eb86ba46b4f541197b7467c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   FlightForce: 35
+=======
+  FlightForce: 30
+>>>>>>> e98631b71421c3ac30eb93273987778bf0e5fd5a
   rb: {fileID: 1411144768}
 --- !u!50 &1411144768
 Rigidbody2D:
