@@ -17,8 +17,10 @@ public class Obstacles : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		
+		 
 	}
+
+    //make a fall function cause gravity is too much for these bois
 
     //Collision with the player will destroy the player object
     private void OnCollisionEnter2D(Collision2D aCol)
