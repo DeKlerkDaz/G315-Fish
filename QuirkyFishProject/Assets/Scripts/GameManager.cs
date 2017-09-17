@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance = null;
-    private BoardManager boardScript;
-    private int difficulty = 3;   // As time passes, the level gets harder to navigate (to bo implemented another time :3)                              
+    BoardManager boardScript;
+    private int difficulty = 1;   // As time passes, the level gets harder to navigate (to bo implemented another time :3)                              
 
     void Awake()
     {

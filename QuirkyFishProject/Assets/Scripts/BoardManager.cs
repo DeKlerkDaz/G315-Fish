@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
-
 public class BoardManager : MonoBehaviour
 {
     [Serializable]
@@ -20,14 +19,15 @@ public class BoardManager : MonoBehaviour
     }
     public int columns = 4;                                         
     public int rows = 50;
-    public float gridWidth = 3.5f;
+    public float gridWidth = 4f;
     public float gridHeight = 5f;
     public Count staticCount = new Count(150, 200);
     public Count movingCount = new Count(15, 20);   //not really needed RN
     public Count powerUpCount = new Count(1, 5);    //not really needed RN
-    public GameObject[] staticObjects;                              
+    public GameObject loadTrigger;
+    public GameObject[] staticObjects;
     public GameObject[] movingObjects;              //not really needed RN                    
-    public GameObject[] powerUps;                   //not really needed RN               
+    public GameObject[] powerUps;                   //not really needed RN    
 
     private Transform boardHolder;                                   //A variable to store a reference to the transform of our Board object.
     private List<Vector3> gridPositions = new List<Vector3>();       //A list of possible locations to place tiles.
@@ -36,11 +36,13 @@ public class BoardManager : MonoBehaviour
     // Clears our list gridPositions and prepares it to generate a new board.
     void InitialiseList()
     {
-        Debug.Log("initiating list");
         gridPositions.Clear();
-        for (float x = -7f; x < columns * (gridWidth - 1); x += gridWidth)
+        for (float x = -6f; x < columns * (gridWidth - 2); x += gridWidth)
             for (float y = 7.5f; y < rows * (gridHeight - 1); y += gridHeight)
                 gridPositions.Add(new Vector3(x, y, 0));
+        Vector3 loadTriggerSpace = gridPositions[gridPositions.Count - 3];
+        loadTriggerSpace += new Vector3(0, 2.5f, 0);
+        Instantiate(loadTrigger, loadTriggerSpace, Quaternion.identity, boardHolder);
     }
 
     //RandomPosition returns a random position from our list gridPositions.
@@ -61,7 +63,6 @@ public class BoardManager : MonoBehaviour
         
         for (int i = 0; i < objectCount; i++)
         {
-            Debug.Log("initiating Item");
             Vector3 randomPosition = RandomPosition();
             GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
             Instantiate(tileChoice, randomPosition, Quaternion.identity,boardHolder);
@@ -69,8 +70,8 @@ public class BoardManager : MonoBehaviour
     }
 
 
-    //SetupScene initializes our level and calls the previous functions to lay out the game board
-    public void SetupScene(int level)
+    //SetupScene initializes the obstic and calls the previous functions to lay out the game board
+    public void SetupScene(int difficulty)
     {
         boardHolder = transform;
         InitialiseList();
