@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23609450479727846}
   - component: {fileID: 50697289490721678}
   - component: {fileID: 61145605296508306}
-  - component: {fileID: 114241398320096408}
+  - component: {fileID: 114264881338313464}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Obstacle
@@ -128,7 +128,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114241398320096408
+--- !u!114 &114264881338313464
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
