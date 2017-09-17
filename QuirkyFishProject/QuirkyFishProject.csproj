@@ -81,10 +81,15 @@
     <Compile Include="Assets\Scripts\BoardManager.cs" />
     <Compile Include="Assets\Scripts\FlightController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\LoadTrigger.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\MovingObstacle.cs" />
     <Compile Include="Assets\Scripts\Obstacles.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\TimerScore.cs" />
+=======
+    <Compile Include="Assets\Scripts\TrashLine.cs" />
+>>>>>>> 2ebfbfdfdb0f37533d8e83466ca8d151a72b4bcc
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

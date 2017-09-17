@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacles : MonoBehaviour
+public class LoadTrigger : MonoBehaviour
 {
+    BoardManager boardScript;
     public Rigidbody2D myRigi;
 
     void Update()
@@ -16,13 +17,13 @@ public class Obstacles : MonoBehaviour
         myRigi.velocity = new Vector3(0, -9.8f, 0);
     }
 
-    //Collision with the player will destroy the player object
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        boardScript = GetComponentInParent<BoardManager>();
         if (collision.CompareTag("Player"))
         {
             Debug.Log("TRIGGERED");
-            Destroy(collision.gameObject);
+            boardScript.SetupScene(1);
         }
     }
 }

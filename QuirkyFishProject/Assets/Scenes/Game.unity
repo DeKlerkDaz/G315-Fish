@@ -483,6 +483,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4428431592356186, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7417241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428431592356186, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7417242
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428431592356186, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.7417242
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
   m_IsPrefabParent: 0
@@ -516,7 +528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   columns: 4
   rows: 50
-  gridWidth: 3.5
+  gridWidth: 4
   gridHeight: 5
   staticCount:
     minimum: 30
@@ -527,6 +539,8 @@ MonoBehaviour:
   powerUpCount:
     minimum: 1
     maximum: 5
+  loadTrigger: {fileID: 1571943707619680, guid: 7e5fce29f5644324085f7003897c7a5e,
+    type: 2}
   staticObjects:
   - {fileID: 1785639173411926, guid: 87808c8e93dd825429802a5db7705b00, type: 2}
   - {fileID: 1499008298490402, guid: 2f861e1cf0f36164193f73786ffc3ba4, type: 2}
