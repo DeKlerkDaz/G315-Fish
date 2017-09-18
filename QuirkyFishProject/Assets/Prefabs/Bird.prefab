@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23609450479727846}
   - component: {fileID: 50697289490721678}
   - component: {fileID: 61145605296508306}
-  - component: {fileID: 114264881338313464}
+  - component: {fileID: 114630154854769294}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Obstacle
@@ -90,7 +90,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1785639173411926}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114264881338313464
+--- !u!114 &114630154854769294
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -136,7 +136,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1785639173411926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b62813475ac184f47be4d89ca355806c, type: 3}
+  m_Script: {fileID: 11500000, guid: 123574d6466a15a40837630763f67574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Obstacle: {fileID: 1785639173411926}
   myRigi: {fileID: 50697289490721678}
+  speed: 1
