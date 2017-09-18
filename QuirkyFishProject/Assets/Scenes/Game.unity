@@ -370,6 +370,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1064232885}
+--- !u!114 &1029436007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029435998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c701b7aabc993fb459563a8629d7f8aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDurationSec: 5
 --- !u!1 &1064232883
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +506,11 @@ Prefab:
     - target: {fileID: 4428431592356186, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.7417242
+      objectReference: {fileID: 0}
+    - target: {fileID: 114662477710966774, guid: cde5ef439cdf0034c81656c5a1f86f91,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
