@@ -9,9 +9,12 @@ public class Movement : MonoBehaviour {
 
     void Start () {
 	}
+
+     public float maxVelocity = 10;
 	
 	void FixedUpdate ()
     {
+        rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxVelocity);
         rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * FlightForce, Input.GetAxis("Vertical") * FlightForce));
     }
 

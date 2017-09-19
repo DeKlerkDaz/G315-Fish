@@ -771,6 +771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 50517767423486576, guid: cde5ef439cdf0034c81656c5a1f86f91,
         type: 2}
+<<<<<<< HEAD
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
@@ -779,6 +780,21 @@ Prefab:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+=======
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50517767423486576, guid: cde5ef439cdf0034c81656c5a1f86f91,
+        type: 2}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114940869799425396, guid: cde5ef439cdf0034c81656c5a1f86f91,
+        type: 2}
+      propertyPath: maxVelocity
+      value: 5
+      objectReference: {fileID: 0}
+>>>>>>> 883fafc52285a3e6df20c68811da9e05980d7cb6
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
   m_IsPrefabParent: 0
