@@ -12,7 +12,9 @@ public class Movement : MonoBehaviour {
 	
 	void FixedUpdate ()
     {
-        rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * FlightForce, Input.GetAxis("Vertical") * FlightForce));
+        rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxVelocity); // limits velocity
+        rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * FlightForce, Input.GetAxis("Vertical") * FlightForce)); // left and right
+                                                                                                                      // and up movement
     }
 
     void OnBecameInvisible()

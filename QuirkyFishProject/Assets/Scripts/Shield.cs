@@ -17,7 +17,7 @@ public class Shield : MonoBehaviour
             if (shieldOn)
             {
                 Debug.Log("shield ON");
-                // enables shield
+                // enable shield
             }
             else
             {
@@ -33,12 +33,12 @@ public class Shield : MonoBehaviour
 		
 	void Update ()
     {
-        if (Input.GetKey(KeyCode.S)) 
+        if (Input.GetKey(KeyCode.Space)) 
         {
-            if (timeElapsed < maxDurationSec)
-            {
-                setShield(true);
-                timeElapsed += Time.deltaTime;
+            if (timeElapsed < maxDurationSec) 
+            {                                  // if elapsed time is less than the max allowed time
+                setShield(true);               // enable the shield
+                timeElapsed += Time.deltaTime; // starts counting time
             }
             else
             {
@@ -47,7 +47,7 @@ public class Shield : MonoBehaviour
 
         } else 
         {
-            setShield(false);
+            setShield(false);                // if button is not pressed, the shield will always be disabled
         }
 	}
 }

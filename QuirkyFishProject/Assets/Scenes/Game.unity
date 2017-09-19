@@ -779,6 +779,11 @@ Prefab:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114940869799425396, guid: cde5ef439cdf0034c81656c5a1f86f91,
+        type: 2}
+      propertyPath: maxVelocity
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
   m_IsPrefabParent: 0
