@@ -14,4 +14,9 @@ public class Movement : MonoBehaviour {
     {
         rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * FlightForce, Input.GetAxis("Vertical") * FlightForce));
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }

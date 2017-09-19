@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BoardManager.cs" />
+    <Compile Include="Assets\Scripts\EndUI.cs" />
     <Compile Include="Assets\Scripts\FlightController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LoadTrigger.cs" />

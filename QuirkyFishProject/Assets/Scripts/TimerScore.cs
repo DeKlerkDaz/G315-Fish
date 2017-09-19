@@ -7,7 +7,7 @@ using UnityEngine;
 public class TimerScore : MonoBehaviour
 {
     public Text timerText;
-    private float startTime;
+    public float startTime;
 
 	// Use this for initialization
 	void Start ()
