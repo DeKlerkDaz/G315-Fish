@@ -14,7 +14,7 @@ public class LoadTrigger : MonoBehaviour
 
     void Fall()
     {
-        myRigi.velocity = new Vector3(0, -9.8f, 0);
+        myRigi.velocity = new Vector3(0, -4f, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

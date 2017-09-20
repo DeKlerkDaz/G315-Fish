@@ -37,7 +37,7 @@ public class MovingObstacle : MonoBehaviour
 
     void Fall()
     {
-        myRigi.velocity = new Vector3(0, -9.8f, 0);
+        myRigi.velocity = new Vector3(0, -4f, 0);
     }
 
     //Collision with the player will destroy the player object
