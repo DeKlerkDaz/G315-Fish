@@ -214,6 +214,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38e3e1f41462cbf48a13d94634744e8a, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &579666768 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224367323773025460, guid: c5fb10ce92c860749850209b864a888b,
+    type: 2}
+  m_PrefabInternal: {fileID: 900617576}
 --- !u!224 &640130231 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224601012219736872, guid: 38e3e1f41462cbf48a13d94634744e8a,
@@ -509,11 +514,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224076048141508546, guid: 7b61f8f7cfa3c324482ec9b08b667898,
     type: 2}
   m_PrefabInternal: {fileID: 993012451}
---- !u!224 &958224294 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224440583484427092, guid: c5fb10ce92c860749850209b864a888b,
-    type: 2}
-  m_PrefabInternal: {fileID: 900617576}
 --- !u!1001 &993012451
 Prefab:
   m_ObjectHideFlags: 0
@@ -707,6 +707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDurationSec: 5
+  shieldPrefab: {fileID: 1558978994895340, guid: d2a6badb64dcba14384cc80a861fdcfd,
+    type: 2}
 --- !u!114 &1064232885 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114579978340506720, guid: 38e3e1f41462cbf48a13d94634744e8a,
@@ -862,7 +864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMenu: {fileID: 918009011}
-  endMenu: {fileID: 958224294}
+  endMenu: {fileID: 579666768}
   timerScore: {fileID: 640130231}
   player: {fileID: 1029436005}
   endScore: {fileID: 390425417}

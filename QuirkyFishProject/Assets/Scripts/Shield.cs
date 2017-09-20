@@ -5,9 +5,16 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
     public float maxDurationSec;
+    public GameObject shieldPrefab;
 
     private float timeElapsed = 0;
-    private bool shieldOn = false;
+    private bool shieldOn = true;
+    private GameObject shieldObj;
+
+    public bool GetShield()
+    {
+        return shieldOn;
+    }
     
     void setShield (bool on)
     {
@@ -17,18 +24,19 @@ public class Shield : MonoBehaviour
             if (shieldOn)
             {
                 Debug.Log("shield ON");
-                // enable shield
+                shieldObj = Instantiate(shieldPrefab, transform);
             }
             else
             {
                 Debug.Log("shield OFF");
-                // disable shield
+                Destroy(shieldObj);
             }
         }
     }
 	
 	void Start ()
     {
+        setShield(false);
 	}
 		
 	void Update ()

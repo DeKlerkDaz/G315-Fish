@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour {
 
     public float FlightForce = 75.0f;
     public Rigidbody2D rb;
+    public float maxVelocity = 5;
 
     void Start () {
 	}
