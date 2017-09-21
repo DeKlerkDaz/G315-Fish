@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4638247016613646}
   - component: {fileID: 135845561064110424}
   - component: {fileID: 54327785694504216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4965653916661562}
   - component: {fileID: 212809159535683876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}

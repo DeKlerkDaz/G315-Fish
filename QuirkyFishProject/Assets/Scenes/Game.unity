@@ -759,6 +759,21 @@ Prefab:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 1064232885}
+    - target: {fileID: 114097081220701176, guid: cde5ef439cdf0034c81656c5a1f86f91,
+        type: 2}
+      propertyPath: warningDurationSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50517767423486576, guid: cde5ef439cdf0034c81656c5a1f86f91,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50517767423486576, guid: cde5ef439cdf0034c81656c5a1f86f91,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cde5ef439cdf0034c81656c5a1f86f91, type: 2}
   m_IsPrefabParent: 0

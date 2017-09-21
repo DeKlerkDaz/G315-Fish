@@ -65,7 +65,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61607324110242996
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDurationSec: 5
+  warningDurationSec: 0
   shieldPrefab: {fileID: 1558978994895340, guid: d2a6badb64dcba14384cc80a861fdcfd,
     type: 2}
 --- !u!114 &114410438983887892
